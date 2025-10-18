@@ -1,8 +1,37 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 }
 
+.left-links,
+.right-links {
+  display: flex;
+  
+  
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  flex: 1 1 auto;
+}
+
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .logo {
   font-size: 48px;
   font-weight: 900;
